@@ -5,7 +5,7 @@ export default function Users(){
     useEffect( ()=>{ // 2.useEffect with dependency array
         fetch('https://jsonplaceholder.typicode.com/users')//3.Use fetch to load data
         .then((response) => response.json())
-        .then((data) => setUsers(data))
+        .then((data) => setUsers(data))//4.set loaded data to the state
 
     }, [])
 
